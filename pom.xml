@@ -20,7 +20,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://192.168.57.130:9000/</sonar.host.url>
+		<sonar.host.url>http://35.179.12.46:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin123</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -96,13 +96,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://localhost:8081/repository/maven-releases/</url>
+	      <url>http://13.40.143.25:8081/repository/maven-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:8081/repository/maven-snapshots/</url>
+	      <url>http://13.40.143.25:8081/repository/maven-snapshots/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	
@@ -151,7 +151,7 @@
 				<version>1.0.3</version>
 				<extensions>true</extensions>
 				<configuration>
-					<nexusUrl>http://localhost:8081</nexusUrl>
+					<nexusUrl>http://13.40.143.25:8081/repository/maven-snapshots/</nexusUrl>
 					<!-- The server "id" element from settings to use authentication from settings.xml-->
 					<serverId>nexus</serverId>
 					<!-- Skip the staging deploy mojo -->
